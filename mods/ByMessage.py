@@ -7,7 +7,7 @@ class ByMessage(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
 
-    @commands.slash_command(description = "Кик/бан пользователей с ролью, и числом сообщений меньше заданного")
+    @commands.slash_command(description = "Кик/бан пользователей с ролью и числом сообщений меньше заданного")
     @commands.contexts(guild = True, bot_dm = False)
     @commands.default_member_permissions(ban_members = True)
 
